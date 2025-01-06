@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="bodi">
+    <div class="darkLightmood">
+      <span id="moon" class="moon" style='font-size:20px;'>&#127761;</span>
+      <span id="sun" class="sun" style='font-size:20px;'>&#127765;</span>
+    </div>
+    <div id="calculator">
+      <div class="display">
+        <input placeholder="0" type="text" readonly max=5 id="display" />
+      </div>
+      <div class="butttons">
+        <div id="keys">
+          <button class="resetBtn" onclick="reset()">AC</button>
+          <button class="resetBtn" onclick="clearing()">C</button>
+          <button class="resetBtn" onclick="btnDisplay('%')">%</button>
+          <button class="operator-btn" onclick="btnDisplay('/')">/</button>
+        </div>
+        <div>
+          <button class="numberBtn" onclick="btnDisplay('7')">7</button>
+          <button class="numberBtn" onclick="btnDisplay('8')">8</button>
+          <button class="numberBtn" onclick="btnDisplay('0')">0</button>
+          <button class="operator-btn" onclick="btnDisplay('*')">x</button>
+        </div>
+        <div>
+          <button class="numberBtn" onclick="btnDisplay('4')">4</button>
+          <button class="numberBtn" onclick="btnDisplay('5')">5</button>
+          <button class="numberBtn" onclick="btnDisplay('6')">6</button>
+          <button class="operator-btn" onclick="btnDisplay('-')">-</button>
+        </div>
+        <div>
+          <button class="numberBtn" onclick="btnDisplay('1')">1</button>
+          <button class="numberBtn" onclick="btnDisplay('2')">2</button>
+          <button class="numberBtn" onclick="btnDisplay('3')">3</button>
+          <button class="operator-btn" onclick="btnDisplay('+')">+</button>
+        </div>
+        <div>
+          <button class="numberBtn" onclick="btnDisplay('0')">0</button>
+          <button class="numberBtn" onclick="btnDisplay('.')">.</button>
+          <button class="numberBtn" onclick="btnDisplay('00')">00</button>
+          <button class="operator-btn" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
